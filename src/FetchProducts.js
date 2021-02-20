@@ -66,9 +66,7 @@ export default class FetchProducts extends React.Component {
             productData = this.state.product100GB[type];
           }
         })
-      }  
-      
-      console.log(productData);
+      }
       return <ProductCard productDetails={productData}/>;
     } 
   }

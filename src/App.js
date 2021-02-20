@@ -2,6 +2,7 @@ import FetchProducts from './FetchProducts'
 import './App.css';
 import CallToAction from './CallToAction';
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 
 let numberOfSims = ['2','3','4','5'];
 let dataArray = ['1GB','6GB','15GB','40GB','60GB','100GB'];
@@ -12,13 +13,23 @@ function App() {
   const [data, setdata] = useState("1GB");
 
   function handleSimClick(event) {
+    ReactDOM.findDOMNode(event.target).parentNode.parentNode.childNodes.forEach(function(el) {
+      if (el.firstChild.classList !== undefined) {
+        el.firstChild.classList.remove("active");
+      }
+    })
     event.target.classList.toggle("active");
     setSim(event.target.id);
   }
 
   function handleDataClick(event) {
-    setdata(event.target.id);
+    ReactDOM.findDOMNode(event.target).parentNode.parentNode.childNodes.forEach(function(el) {
+      if (el.firstChild.classList !== undefined) {
+        el.firstChild.classList.remove("active");
+      }
+    })
     event.target.classList.toggle("active");
+    setdata(event.target.id);
   }
 
   return (
