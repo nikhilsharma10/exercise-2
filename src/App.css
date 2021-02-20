@@ -1,38 +1,156 @@
-.App {
+.Main {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main .Sim-Module {
+  margin: 1rem 30rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Main .CallToAction {
+  display: inline-block;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Main .CallToAction button {
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: white;
+  color: #6400aa;
+  font-weight: bold;
+  border-color:  #6400aa;
+  border-radius: 5px;
+}
+
+.Main .CallToAction .active {
+  background-color: rgb(0, 138, 0);
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 138, 0);
+}
+
+
+.Main .Product-Card-Section .product-card-v3_product_card {
+  margin: 40px auto;
+  max-width: 375px;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__wrap {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__bundle {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__bundle__sim {
+position: relative;
+width: 60px;
+height: 90px;
+margin-right: 20px;
+}
+
+svg:not(:root){overflow:hidden}
+
+.Main .Product-Card-Section .product-card-v3_product_card__bundle__sim__count {
+display: flex;
+flex-direction: column;
+position: relative;
+justify-content: center;
+align-items: center;
+height: 100%;
+color: #fff;
+margin-top: -93px;
+}
+
+.Main .Product-Card-Section .s2 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__bundle__sim__count__text,
+.Main .Product-Card-Section .product-card-v3_product_card__bundle__allowance {
+  font-size: 14px;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__bundle__allowance__data_desc {
+  margin-top: 2px;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__features {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.Main .Product-Card-Section .product-card-v3_product_card__features__item {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC9SURBVHgBnZExEsFAFIa/TQrKHMERHAGFUcYJ3MKMTpdB4QpKHb3CpNI6giOolOLfbCEhIZt/5uVt8ub7ZrNraJM1fT23PJgafGNhw5mMSJX6CYow3FXD5oIKmDnXIB8u84/esB2FJPTocGGs4YnUB3aCCQd1e6oDSShJVswI2NfBTjASEBBrHZUkFjbs9Natg23cIdrfCLVN1F2OqjhfZdx4Cl6oV+R9C9+Sv3BZ8ClpAFfHSjaSJIWd/MgLpQJCxQJq5+QAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-position: left 5px;
+  padding-left: 20px;
+  margin-top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Main .Product-Card-Section .price-card-v3_price_card {
+  padding: 20px 15px;
+  border-radius: 5px;
+  background-color: #eee;
+  text-align: center;
+}
+
+.Main .Product-Card-Section .price-card-v3_price_card__monthly_price {
+  margin-bottom: 10px;
+}
+
+
+.Main .Product-Card-Section .price-card-v3_price_card__features {
+  margin-bottom: 15px;
+}
+
+.Main .Product-Card-Section .button_cta {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 80px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__countdown {
+background-color: rgb(255, 220, 0);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1px;
+    font-family: bt_font_bold !important;
+    padding: 15px 30px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__countdown .countdown--timer {
+  background: white;
+  padding: 0px 70px;
+}
+
+.Main .Product-Card-Section .product-card-v3_product_card__wrap .button_pink {
+  color: rgb(255, 255, 255);
+  background: rgb(226, 0, 70);
+  border-color: rgb(226, 0, 70);
+}
+
+.Main .Product-Card-Section .price-card-v3_price_card__monthly_price__major .old--price {
+  text-decoration: line-through;
 }
